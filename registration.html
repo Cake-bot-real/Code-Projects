@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know-a-Guy Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: "Kumbh Sans", sans-serif;
+            background-color: #f5e4e4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .registration-container {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #a30101;
+            margin-bottom: 1rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            display: block;
+            color: #555;
+        }
+
+        input[type="text"], input[type="email"], select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, select:focus {
+            border-color: #a30101;
+            outline: none;
+            box-shadow: 0 0 4px rgba(163, 1, 1, 0.2);
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem; /* Increased spacing from the next section */
+        }
+
+        .checkbox-group label {
+            font-size: 0.9rem;
+            color: #333;
+            flex: 1 1 calc(50% - 1rem); /* Make checkboxes take equal space */
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+
+        .submit-btn {
+            background: #a30101;
+            color: #fff;
+            border: none;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #800101;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .checkbox-group label {
+                flex: 1 1 100%; /* Make checkboxes stack vertically on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Register Now</h2>
+        <form action="https://formspree.io/f/xrbbwoko" method="POST">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="First Name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="Last Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="services">Requested Service(s)</label>
+                <div class="checkbox-group" id="services-checkboxes">
+                    <label><input type="checkbox" name="Services[]" value="Snow Shoveling"> Snow Shoveling</label>
+                    <label><input type="checkbox" name="Services[]" value="Yard Work"> Yard Work</label>
+                    <label><input type="checkbox" name="Services[]" value="Babysitting"> Babysitting</label>
+                    <label><input type="checkbox" name="Services[]" value="Dog Care"> Dog Care</label>
+                    <label><input type="checkbox" name="Services[]" value="Lifting Assistance"> Lifting Assistance</label>
+                    <label><input type="checkbox" name="Services[]" value="Art Commissions"> Art Commissions</label>
+                    <label><input type="checkbox" name="Services[]" value="Basic Graphic Design"> Basic Graphic Design</label>
+                    <label><input type="checkbox" name="Services[]" value="Event Assistance">Event Assistance</label>
+                    <label><input type="checkbox" name="Services[]" value="Errand Running"> Errand Running</label>
+                    <label><input type="checkbox" name="Services[]" value="Website Design"> Website Design</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="referral">Where did you hear about us?</label>
+                <select id="referral" name="Referral" required>
+                    <option value="Word of Mouth">Word of Mouth</option>
+                    <option value="Flyer">Flyer</option>
+                    <option value="Event">Event</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Instagram">Instagram</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
