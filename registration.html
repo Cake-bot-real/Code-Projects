@@ -153,5 +153,20 @@
             <button type="submit" class="submit-btn">Submit</button>
         </form>
     </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const service = urlParams.get('service');
+    
+            if (service) {
+                const checkboxes = document.querySelectorAll('input[name="Services[]"]');
+                checkboxes.forEach((checkbox) => {
+                    if (checkbox.value === service) {
+                        checkbox.checked = true;
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
