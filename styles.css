@@ -190,7 +190,7 @@ body {
     align-items: center;
     max-width: 1200rem;
     margin: 0 auto;
-    padding: 100rem 20rem; /* Adjust for header height */
+    padding: 100px 20px; /* Adjust for header height */
 }
 
 .hero__content {
