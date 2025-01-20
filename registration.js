@@ -5,3 +5,6 @@ function updateCheckboxes() {
       checkbox.checked = (checkbox.value == service);
     }
   }
+document.addEventListener("DOMContentLoaded", function () {
+    updateCheckboxes();
+});
