@@ -137,6 +137,35 @@ body {
     color: #a30101;
 }
 
+.hero__content h1 {
+    font-size: 4rem; /* 64px at base 16px */
+    line-height: 1.2;
+}
+
+.hero__content p {
+    font-size: 1.2rem; /* 19.2px */
+}
+
+@media screen and (max-width: 768px) {
+    .hero__content h1 {
+        font-size: 3rem; /* Shrink for tablets */
+    }
+
+    .hero__content p {
+        font-size: 1rem; /* Shrink for tablets */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero__content h1 {
+        font-size: 2rem; /* Further shrink for small phones */
+    }
+
+    .hero__content p {
+        font-size: 0.9rem; /* Further shrink for small phones */
+    }
+}
+
 .hero__content p {
     font-size: 1.2rem;
     margin: 20px 0;
@@ -159,9 +188,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1200rem;
     margin: 0 auto;
-    padding: 100px 20px; /* Adjust for header height */
+    padding: 100rem 20rem; /* Adjust for header height */
 }
 
 .hero__content {
@@ -170,7 +199,7 @@ body {
 }
 
 .hero__content h1 {
-    font-size: 4rem; /* Larger text size */
+    font-size: 2rem; /* Larger text size */
     color: #a30101;
     margin-bottom: 20px;
 }
