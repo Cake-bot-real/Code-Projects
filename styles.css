@@ -680,21 +680,6 @@ input:checked + .slider:before {
     width: 160px;
 }
 
-.footer__links {
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-}
-
-.footer__link-items {
-    display: flex;
-    flex-direction: column;
-    margin: 16px;
-    text-align: left;
-    width: 160px;
-}
-
 .footer__link-items h2 {
     margin-bottom: 1rem;
     color: #a30101;
