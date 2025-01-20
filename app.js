@@ -39,3 +39,4 @@ window.addEventListener("load", () => {
     const currentYear = new Date().getFullYear();
     yearElement.textContent = currentYear;
 })
+
