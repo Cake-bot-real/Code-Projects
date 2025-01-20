@@ -731,12 +731,13 @@ input:checked + .slider:before {
 .social__icons {
     display: flex;
     justify-content: space-between;
-    width: 240px;
+    width: fit-content;
 }
 
 .social__icon-link {
     color: #a30101;
     font-size: 24px;
+    margin: 0 20px;
 }
 
 @media screen and (max-width: 820px) {
@@ -798,7 +799,7 @@ body {
     padding: 10px 20px; /* Proper spacing for a rectangle */
     border-radius: 5px; /* Slight rounding */
     text-align: center;
-    background-color: #007BFF; /* Button background color */
+    background-color: #a30101; /* Button background color */
     color: #fff;
     text-decoration: none;
     margin-left: 15px; /* Space away from hamburger icon */
