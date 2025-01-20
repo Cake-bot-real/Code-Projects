@@ -137,6 +137,35 @@ body {
     color: #a30101;
 }
 
+.hero__content h1 {
+    font-size: 4rem; /* 64px at base 16px */
+    line-height: 1.2;
+}
+
+.hero__content p {
+    font-size: 1.2rem; /* 19.2px */
+}
+
+@media screen and (max-width: 768px) {
+    .hero__content h1 {
+        font-size: 3rem; /* Shrink for tablets */
+    }
+
+    .hero__content p {
+        font-size: 1rem; /* Shrink for tablets */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero__content h1 {
+        font-size: 2rem; /* Further shrink for small phones */
+    }
+
+    .hero__content p {
+        font-size: 0.9rem; /* Further shrink for small phones */
+    }
+}
+
 .hero__content p {
     font-size: 1.2rem;
     margin: 20px 0;
@@ -159,9 +188,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1200rem;
     margin: 0 auto;
-    padding: 100px 20px; /* Adjust for header height */
+    padding: 100rem 20rem; /* Adjust for header height */
 }
 
 .hero__content {
@@ -170,7 +199,7 @@ body {
 }
 
 .hero__content h1 {
-    font-size: 4rem; /* Larger text size */
+    font-size: 2rem; /* Larger text size */
     color: #a30101;
     margin-bottom: 20px;
 }
@@ -737,7 +766,57 @@ input:checked + .slider:before {
     }
 
     
-    
+    /* Ensure images scale properly */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Make text responsive */
+body {
+    font-size: 16px; /* Base font size */
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem; /* Adjust for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* Style the button in the header */
+.navbar__btn a {
+    display: inline-block;
+    padding: 10px 20px; /* Proper spacing for a rectangle */
+    border-radius: 5px; /* Slight rounding */
+    text-align: center;
+    background-color: #007BFF; /* Button background color */
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px; /* Space away from hamburger icon */
+}
+
+.navbar__toggle {
+    margin-right: 20px; /* Space between the button and hamburger */
+}
+
+/* Adjust button and spacing on mobile */
+@media screen and (max-width: 768px) {
+    .navbar__btn a {
+        padding: 8px 15px; /* Smaller padding for mobile */
+        font-size: 0.9rem; /* Adjust font size */
+    }
+    .navbar__toggle {
+        margin-right: 10px; /* Reduce space on smaller screens */
+    }
+}
 
 
 

@@ -51,22 +51,3 @@ window.addEventListener("load", () => {
     const currentYear = new Date().getFullYear();
     yearElement.textContent = currentYear;
 })
-
-document.addEventListener("DOMContentLoaded", function () {
-    // Parse the query parameters from the URL
-    const params = new URLSearchParams(window.location.search);
-    const selectedService = params.get("service"); // Get the 'service' parameter
-
-    if (selectedService) {
-        // Locate the checkboxes
-        const checkboxes = document.querySelectorAll("#services-checkboxes input[type='checkbox']");
-
-        // Pre-check the checkbox that matches the selected service
-        checkboxes.forEach((checkbox) => {
-            if (checkbox.value === selectedService) {
-                checkbox.checked = true;
-            }
-        });
-    }
-});
-
