@@ -6,18 +6,6 @@ menu.addEventListener("click", function () {
     menuLinks.classList.toggle("active");
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const track = document.querySelector(".rotating-logos__track");
-    const logos = track.innerHTML;
-
-    // Set a fixed number of repetitions (e.g., 5 times)
-    repeatCount; // You can adjust this value
-
-    // Duplicate the logos content multiple times for seamless scrolling
-    track.innerHTML = logos.repeat(repeatCount);
-});
-
-
 // Function to toggle the different deals
 function switchPricing() {
     const checkbox = document.getElementById("pricing-toggle-checkbox");
