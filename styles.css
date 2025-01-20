@@ -788,8 +788,8 @@ body {
     padding: 10px 20px; /* Proper spacing for a rectangle */
     border-radius: 5px; /* Slight rounding */
     text-align: center;
-    background-color: #a30101; /* Button background color */
-    color: #fff;
+    background-color: #fff; /* Button background color */
+    color: #a30101;
     text-decoration: none;
     margin-left: 15px; /* Space away from hamburger icon */
 }
