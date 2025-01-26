@@ -359,7 +359,7 @@ body {
 }
 }
 /* Our Mission Section */
-.mission-section {
+#mission-section {
     background-color: #f9f9f9; /* Light gray to contrast other sections */
     padding: 5rem 1.5rem; /* Add more padding for spaciousness */
     text-align: center; /* Center all text horizontally */
@@ -371,15 +371,34 @@ body {
     justify-content: center; /* Center items vertically */
 }
 
-.mission-section h2 {
+#mission-section h2 {
     font-size: 3rem; /* Larger heading size */
     color: #131313; /* Dark text for contrast */
     margin-bottom: 1.5rem; /* Space below the heading */
     text-transform: uppercase; /* Make the heading all caps */
     font-weight: bold; /* Bold heading for emphasis */
 }
+#mission-section .mission-btn {
+    margin-top: 2rem; /* Space above the button */
+    display: inline-block; /* Allow inline styling */
+    background-color: #a30101; /* Red button background */
+    color: #ffffff; /* White button text */
+    font-size: 1.5rem; /* Larger button text size */
+    padding: 1rem 3rem; /* Increase button padding */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Smooth rounded corners */
+    text-transform: uppercase; /* Button text in caps */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
 
-.mission-section p {
+#mission-section .mission-btn:hover {
+    background-color: #e01b1b; /* Slightly lighter red on hover */
+    transform: scale(1.1); /* Slightly enlarge button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+#mission-section p {
     font-size: 1.5rem; /* Larger paragraph text */
     color: #555555; /* Subtle gray for readability */
     line-height: 2; /* Increase line spacing for clarity */
