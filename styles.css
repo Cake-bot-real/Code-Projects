@@ -359,56 +359,34 @@ body {
 }
 }
 /* Our Mission Section */
+/* Our Mission Section */
 .our-mission {
     background-color: #f9f9f9; /* Light gray to contrast other sections */
-    padding: 3rem 1.5rem; /* Padding for spacing */
-    text-align: center; /* Center the text */
-    border-top: 2px solid #a30101; /* Match accent color */
-    border-bottom: 2px solid #a30101; /* Match accent color */
+    padding: 5rem 1.5rem; /* Add more padding for spaciousness */
+    text-align: center; /* Center all text horizontally */
+    border-top: 2px solid #a30101; /* Red accent border */
+    border-bottom: 2px solid #a30101; /* Red accent border */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
 }
 
 .our-mission h2 {
-    font-size: 2.5rem; /* Large heading size */
+    font-size: 3rem; /* Larger heading size */
     color: #131313; /* Dark text for contrast */
-    margin-bottom: 1rem; /* Spacing below the heading */
+    margin-bottom: 1.5rem; /* Space below the heading */
     text-transform: uppercase; /* Make the heading all caps */
-    font-weight: bold; /* Emphasize the heading */
+    font-weight: bold; /* Bold heading for emphasis */
 }
 
 .our-mission p {
-    font-size: 1.25rem; /* Larger paragraph text */
+    font-size: 1.5rem; /* Larger paragraph text */
     color: #555555; /* Subtle gray for readability */
-    line-height: 1.8; /* Improve line spacing for clarity */
+    line-height: 2; /* Increase line spacing for clarity */
     margin: 0 auto; /* Center the text block */
-    max-width: 800px; /* Limit the width of the paragraph */
+    max-width: 900px;
 }
-
-.our-mission p span {
-    color: #a30101; /* Accent color for key phrases */
-    font-weight: bold; /* Highlighted text */
-}
-
-.our-mission .mission-btn {
-    margin-top: 2rem; /* Space above the button */
-    display: inline-block; /* Allow inline styling */
-    background-color: #a30101; /* Accent color */
-    color: #ffffff; /* White text */
-    font-size: 1.2rem; /* Button text size */
-    padding: 0.75rem 2rem; /* Button padding */
-    border: none; /* Remove default border */
-    border-radius: 10px; /* Rounded corners */
-    text-transform: uppercase; /* Capitalize text */
-    text-decoration: none; /* Remove underline */
-    transition: all 0.3s ease; /* Smooth hover effect */
-}
-
-.our-mission .mission-btn:hover {
-    background-color: #e01b1b; /* Lighter red on hover */
-    transform: scale(1.05); /* Slightly enlarge */
-    cursor: pointer; /* Show pointer on hover */
-}
-
-
 /* Pricing Plans CSS */
 .services {
     text-align: center;
