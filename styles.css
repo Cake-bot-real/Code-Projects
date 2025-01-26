@@ -358,6 +358,56 @@ body {
     max-width: 100%;
 }
 }
+/* Our Mission Section */
+.our-mission {
+    background-color: #f9f9f9; /* Light gray to contrast other sections */
+    padding: 3rem 1.5rem; /* Padding for spacing */
+    text-align: center; /* Center the text */
+    border-top: 2px solid #a30101; /* Match accent color */
+    border-bottom: 2px solid #a30101; /* Match accent color */
+}
+
+.our-mission h2 {
+    font-size: 2.5rem; /* Large heading size */
+    color: #131313; /* Dark text for contrast */
+    margin-bottom: 1rem; /* Spacing below the heading */
+    text-transform: uppercase; /* Make the heading all caps */
+    font-weight: bold; /* Emphasize the heading */
+}
+
+.our-mission p {
+    font-size: 1.25rem; /* Larger paragraph text */
+    color: #555555; /* Subtle gray for readability */
+    line-height: 1.8; /* Improve line spacing for clarity */
+    margin: 0 auto; /* Center the text block */
+    max-width: 800px; /* Limit the width of the paragraph */
+}
+
+.our-mission p span {
+    color: #a30101; /* Accent color for key phrases */
+    font-weight: bold; /* Highlighted text */
+}
+
+.our-mission .mission-btn {
+    margin-top: 2rem; /* Space above the button */
+    display: inline-block; /* Allow inline styling */
+    background-color: #a30101; /* Accent color */
+    color: #ffffff; /* White text */
+    font-size: 1.2rem; /* Button text size */
+    padding: 0.75rem 2rem; /* Button padding */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    text-transform: uppercase; /* Capitalize text */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.our-mission .mission-btn:hover {
+    background-color: #e01b1b; /* Lighter red on hover */
+    transform: scale(1.05); /* Slightly enlarge */
+    cursor: pointer; /* Show pointer on hover */
+}
+
 
 /* Pricing Plans CSS */
 .services {
