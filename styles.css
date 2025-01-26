@@ -360,7 +360,7 @@ body {
 }
 /* Our Mission Section */
 /* Our Mission Section */
-.our-mission {
+.mission-section {
     background-color: #f9f9f9; /* Light gray to contrast other sections */
     padding: 5rem 1.5rem; /* Add more padding for spaciousness */
     text-align: center; /* Center all text horizontally */
@@ -372,7 +372,7 @@ body {
     justify-content: center; /* Center items vertically */
 }
 
-.our-mission h2 {
+.mission-section h2 {
     font-size: 3rem; /* Larger heading size */
     color: #131313; /* Dark text for contrast */
     margin-bottom: 1.5rem; /* Space below the heading */
@@ -380,7 +380,7 @@ body {
     font-weight: bold; /* Bold heading for emphasis */
 }
 
-.our-mission p {
+.mission-section p {
     font-size: 1.5rem; /* Larger paragraph text */
     color: #555555; /* Subtle gray for readability */
     line-height: 2; /* Increase line spacing for clarity */
