@@ -114,6 +114,10 @@ body {
         overflow-y: auto;
     }
 
+    #navbar__menu {
+        display: none;
+    }
+
     .navbar__menu.active {
         left: 0;
     }
