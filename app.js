@@ -7,9 +7,9 @@ menu.addEventListener("click", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("menu-toggle"); // The hamburger menu button
-    const navMenu = document.getElementById("nav-menu"); // The mobile menu container
-    const navLinks = document.querySelectorAll(".nav-link"); // All nav links
+    const menuToggle = document.getElementById("mobile-menu"); // The hamburger menu button
+    const navMenu = document.getElementById("navbar__container"); // The mobile menu container
+    const navLinks = document.querySelectorAll(".navbar__links"); // All nav links
 
     // Close menu when a nav link is clicked
     navLinks.forEach(link => {
