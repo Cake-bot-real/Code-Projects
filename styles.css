@@ -394,9 +394,9 @@ body {
 }
 
 #mission-section .mission-btn:hover {
-    background-color: #e01b1b; /* Slightly lighter red on hover */
-    transform: scale(1.1); /* Slightly enlarge button */
-    cursor: pointer; /* Pointer cursor on hover */
+    background-color: #e01b1b !important; /* Slightly lighter red on hover */
+    transform: scale(1.1) !important; /* Slightly enlarge button */
+    cursor: pointer !important; /* Pointer cursor on hover */
 }
 
 #mission-section p {
