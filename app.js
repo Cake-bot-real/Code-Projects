@@ -6,6 +6,20 @@ menu.addEventListener("click", function () {
     menuLinks.classList.toggle("active");
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle"); // The hamburger menu button
+    const navMenu = document.getElementById("nav-menu"); // The mobile menu container
+    const navLinks = document.querySelectorAll(".nav-link"); // All nav links
+
+    // Close menu when a nav link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            navMenu.classList.remove("active"); // Hide the menu
+            menuToggle.checked = false; // Uncheck the checkbox if using a checkbox toggle
+        });
+    });
+});
+
 // Function to toggle the different deals
 function switchPricing() {
     const checkbox = document.getElementById("pricing-toggle-checkbox");
