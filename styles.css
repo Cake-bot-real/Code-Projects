@@ -863,7 +863,94 @@ body {
     }
 }
 
+/* Leave a Review Section */
+.leave-review {
+    background-color: #a30101; /* Match the main red color */
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    margin: 50px 0;
+}
 
+.leave-review h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.leave-review p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #f5e4e4; /* Slightly lighter red for readability */
+}
+
+.leave-review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.leave-review-form input,
+.leave-review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.leave-review-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.leave-review-form button {
+    background-color: #a30101;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.leave-review-form button:hover {
+    background-color: #800101;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .leave-review h2 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+
+    .leave-review p {
+        font-size: 1rem; /* Adjust paragraph size for readability */
+    }
+
+    .leave-review-form {
+        padding: 20px;
+    }
+
+    .leave-review-form input,
+    .leave-review-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .leave-review-form button {
+        font-size: 1rem;
+    }
+}
 
 
 
