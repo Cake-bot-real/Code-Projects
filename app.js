@@ -54,3 +54,28 @@ window.addEventListener("load", () => {
     yearElement.textContent = currentYear;
 })
 
+document.getElementById('review-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const reviewerName = document.getElementById('reviewer-name').value;
+    const reviewText = document.getElementById('review-text').value;
+
+    if (reviewerName && reviewText) {
+        const reviewCard = document.createElement('div');
+        reviewCard.classList.add('review-card');
+
+        const reviewerNameElement = document.createElement('h4');
+        reviewerNameElement.textContent = reviewerName;
+
+        const reviewTextElement = document.createElement('p');
+        reviewTextElement.textContent = reviewText;
+
+        reviewCard.appendChild(reviewerNameElement);
+        reviewCard.appendChild(reviewTextElement);
+
+        document.getElementById('submitted-reviews').appendChild(reviewCard);
+
+        // Reset form
+        document.getElementById('review-form').reset();
+    }
+});
