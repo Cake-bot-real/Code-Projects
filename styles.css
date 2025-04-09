@@ -863,12 +863,16 @@ body {
     }
 }
 
-* Review Section Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Review Section Styles */
 .review-section {
     background-color: #8b0000; /* dark red */
     padding: 60px 20px;
     text-align: center;
-    color: #f0f0f0; /* default text color */
+    color: #f0f0f0;
   }
   
   .review-title {
@@ -879,7 +883,7 @@ body {
   
   .review-subtitle {
     font-size: 1.1rem;
-    color: #ddd; /* lighter text for subtitle */
+    color: #e8e8e8; /* lighter than #ddd */
     margin-bottom: 40px;
     max-width: 600px;
     margin-left: auto;
@@ -933,10 +937,4 @@ body {
   .review-form button:hover {
     background-color: #ddd;
   }
-
-
-
-
-html {
-    scroll-behavior: smooth;
-}
+  
