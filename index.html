@@ -301,6 +301,24 @@
             </div>
      </div>
 </section>
+<section id="review-section" class="review-section">
+    <div class="review-container">
+      <h2 class="review-title">Leave a Review</h2>
+      <p class="review-subtitle">We would love to hear your feedback and experience with Know-a-Guy!</p>
+  
+      <form action="https://formspree.io/f/meoapnzw" method="POST" class="review-form">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="_replyto" placeholder="Your email (optional)" />
+        <textarea name="message" placeholder="Write your review..." required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+  
+      <!-- Future review display area -->
+      <div id="submitted-reviews" class="submitted-reviews">
+        <!-- Example reviews can go here in the future -->
+      </div>
+    </div>
+  </section>
 
 
     <!-- Footer Section -->
@@ -340,27 +358,6 @@
             </section>
         </div>
     </footer>
-
-    <section id="review-section">
-        <div class="review-container">
-          <h2>Leave a Review</h2>
-          <p>We would love to hear your feedback and experience with Know-a-Guy!</p>
-      
-          <form action="https://formspree.io/f/meoapnzw" method="POST">
-            <input type="text" name="name" placeholder="Your name" required />
-            <textarea name="message" placeholder="Write your review..." required></textarea>
-            <input type="email" name="_replyto" placeholder="Your email (optional)" />
-            <button type="submit">Submit Review</button>
-          </form>
-      
-          <!-- Placeholder for displaying reviews in the future -->
-          <div id="submitted-reviews" class="submitted-reviews">
-            <!-- Example:
-            <div class="review-card">
-              <h4>John Doe</h4>
-              <p>These guys are amazin! Affordable and reliable. Will use again!</p>
-            </div>
-            -->
           </div>
         </div>
       </section>
