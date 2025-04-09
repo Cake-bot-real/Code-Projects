@@ -2,61 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services - Know-a-guy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | Know-a-guy</title>
   <link rel="stylesheet" href="services.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="logo-container">
-      <img src="images/Know A Guy Final Banner!.png" alt="Know-a-guy Logo" class="logo" />
-    </div>
-    <nav class="nav">
-      <ul class="nav-links">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/services.html">Services</a></li>
-        <li><a href="/locations.html">Locations</a></li>
-        <li><a href="/contact.html">Contact Us</a></li>
-      </ul>
-      <div class="hamburger">&#9776;</div>
+  <header class="main-header">
+    <img src="Know A Guy Final Banner!.png" alt="Know-a-guy Logo" class="logo"/>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="locations.html">Locations</a>
     </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
   </header>
 
-  <main class="main-content">
-    <h1 class="page-title">Our Services</h1>
+  <h1 class="section-title">Our Services</h1>
 
-    <!-- Service Box Example -->
-    <section class="service-box" style="background-image: url('lawn.jpg');">
-      <div class="overlay">
-        <h2>Lawn Care</h2>
-        <p>Grass mowing, trimming, and general maintenance to keep your yard looking fresh.</p>
-        <a href="/signup" class="book-btn">Book Now</a>
+  <div class="services-container">
+    <div class="service-box" style="background-image: url('lawn.jpg');">
+      <div class="service-overlay">
+        <h2>Lawn Mowing</h2>
+        <p>Keep your yard neat and tidy with professional mowing.</p>
+        <a href="signup.html" class="book-btn">Book Now</a>
       </div>
-    </section>
+    </div>
 
-    <section class="service-box" style="background-image: url('dog.jpg');">
-      <div class="overlay">
+    <div class="service-box" style="background-image: url('dog.jpg');">
+      <div class="service-overlay">
         <h2>Dog Sitting</h2>
-        <p>Trusted and caring dog sitting services while you're away.</p>
-        <a href="/signup" class="book-btn">Book Now</a>
+        <p>Experienced care and fun walks for your furry friends.</p>
+        <a href="signup.html" class="book-btn">Book Now</a>
       </div>
-    </section>
+    </div>
 
-    <section class="service-box" style="background-image: url('trash.jpg');">
-      <div class="overlay">
+    <div class="service-box" style="background-image: url('trash.jpg');">
+      <div class="service-overlay">
         <h2>Trash Removal</h2>
-        <p>We'll haul off anything you don’t want around anymore.</p>
-        <a href="/signup" class="book-btn">Book Now</a>
+        <p>Efficient and reliable trash pickup and disposal services.</p>
+        <a href="signup.html" class="book-btn">Book Now</a>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <section class="service-box" style="background-image: url('oddjob.jpg');">
-      <div class="overlay">
-        <h2>Odd Jobs</h2>
-        <p>Need something random done? You know a guy.</p>
-        <a href="/signup" class="book-btn">Book Now</a>
-      </div>
-    </section>
-  </main>
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
 </body>
 </html>

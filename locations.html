@@ -2,40 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Locations - Know-a-guy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Locations | Know-a-guy</title>
   <link rel="stylesheet" href="locations.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="logo-container">
-      <img src="images/Know A Guy Final Banner!.png" alt="Know-a-guy Logo" class="logo" />
-    </div>
-    <nav class="nav">
-      <ul class="nav-links">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/services.html">Services</a></li>
-        <li><a href="/locations.html">Locations</a></li>
-        <li><a href="/contact.html">Contact Us</a></li>
-      </ul>
-      <div class="hamburger">&#9776;</div>
+  <header class="main-header">
+    <img src="Know A Guy Final Banner!.png" alt="Know-a-guy Logo" class="logo"/>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="locations.html">Locations</a>
     </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
   </header>
 
-  <main class="main-content">
-    <h1 class="page-title">Our Service Locations</h1>
-    <div class="locations-container">
-      <!-- Editable Example -->
-      <div class="location-box">
-        <h2>Philadelphia, PA</h2>
-        <p>We offer full services in this area.</p>
-      </div>
+  <h1 class="section-title">Service Locations</h1>
 
-      <div class="location-box">
-        <h2>Custom Location</h2>
-        <p>You can add more here as your business grows!</p>
-      </div>
-    </div>
-  </main>
+  <div class="location-form">
+    <input type="text" id="locationInput" placeholder="Enter a location..." />
+    <button onclick="addLocation()">Add</button>
+  </div>
+
+  <ul class="location-list" id="locationList"></ul>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+
+    function addLocation() {
+      const input = document.getElementById("locationInput");
+      const list = document.getElementById("locationList");
+      const location = input.value.trim();
+      if (location) {
+        const li = document.createElement("li");
+        li.textContent = location;
+        list.appendChild(li);
+        input.value = "";
+      }
+    }
+  </script>
 </body>
 </html>
