@@ -3,27 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Locations | Know-a-guy</title>
+  <title>Our Locations | Know-a-Guy</title>
   <link rel="stylesheet" href="locations.css" />
+  <script src="https://kit.fontawesome.com/e2d15f52fe.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="main-header">
-    <img src="Know A Guy Final Banner!.png" alt="Know-a-guy Logo" class="logo"/>
-    <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="locations.html">Locations</a>
-    </nav>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="/"><img src="/images/logo.png" alt="Know-a-Guy Logo" /></a>
+      <span>Know-a-Guy</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/locations.html">Locations</a></li>
+    </ul>
+    <a href="mailto:knowaguyemail@icloud.com" class="contact-btn">Contact Us</a>
+  </nav>
+
+  <header class="locations-header">
+    <h1>Our Service Areas</h1>
+    <p>Enter the areas where Know-a-Guy currently operates. We’re always expanding!</p>
   </header>
 
-  <h1 class="section-title">Service Locations</h1>
-
-  <div class="location-form">
-    <input type="text" id="locationInput" placeholder="Enter a location..." />
-    <button onclick="addLocation()">Add</button>
-  </div>
-
-  <ul class="location-list" id="locationList"></ul>
+  <section class="locations-form">
+    <form>
+      <input type="text" placeholder="Add a location..." />
+      <button type="submit">Add</button>
+    </form>
+    <ul class="location-list">
+      <!-- User-defined locations can appear here via JS or be manually added -->
+      <li>Example: Pittsburgh, PA</li>
+      <li>Example: Harrisburg, PA</li>
+    </ul>
+  </section>
 </body>
 </html>
