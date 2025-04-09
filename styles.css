@@ -869,10 +869,10 @@ html {
 
 /* Review Section Styles */
 .review-section {
-    background-color: #8b0000; /* dark red */
+    background-color: #8b0000; /* Dark red background */
     padding: 60px 20px;
     text-align: center;
-    color: #f0f0f0;
+    color: #f0f0f0; /* Light text color */
   }
   
   .review-title {
@@ -883,7 +883,7 @@ html {
   
   .review-subtitle {
     font-size: 1.1rem;
-    color: #e8e8e8; /* lighter than #ddd */
+    color: #ddd; /* Lighter text for subtitle */
     margin-bottom: 40px;
     max-width: 600px;
     margin-left: auto;
@@ -933,6 +933,7 @@ html {
     transition: background-color 0.3s ease;
     font-weight: bold;
   }
+  
   .review-form button:hover {
     background-color: #ddd;
   }  
