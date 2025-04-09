@@ -432,31 +432,6 @@ body {
     gap: 1rem;
 }
 
-/* Responsive Adjustments for smaller screens */
-@media (max-width: 600px) {
-    .pricing-toggle {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .toggle-option {
-        margin: 5px 0; /* Adjust margin to make elements closer */
-    }
-}
-
-/* When the checkbox is checked, change the slider background and move the knob */
-input:checked + .slider {
-    background-color: #0ce48d;
-}
-
-input:focus + .slider {
-    box-shadow: 0 0 1px #0ce48d;
-}
-
-input:checked + .slider:before {
-    transform: translateX(30px);
-}
-
 .services {
     background: #000;
     padding: 100px 0;
