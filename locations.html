@@ -25,23 +25,5 @@
   </div>
 
   <ul class="location-list" id="locationList"></ul>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById('navLinks').classList.toggle('active');
-    }
-
-    function addLocation() {
-      const input = document.getElementById("locationInput");
-      const list = document.getElementById("locationList");
-      const location = input.value.trim();
-      if (location) {
-        const li = document.createElement("li");
-        li.textContent = location;
-        list.appendChild(li);
-        input.value = "";
-      }
-    }
-  </script>
 </body>
 </html>
