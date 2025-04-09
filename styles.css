@@ -75,13 +75,19 @@ body {
     align-items: center;
 }
 
+.price-btn {
+    display: inline-block;  /* Make it behave like a block but not take full width */
+    margin-top: 10px;       /* Optional: Adds some spacing around the button */
+    text-align: center;     /* Centers the button inside the container */
+}
+
 .button {
-    background: #fff;
+    background: #a30101;
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
     text-decoration: none;
-    color: #a30101;
+    color: #fff;
 }
 
 .button:hover {
