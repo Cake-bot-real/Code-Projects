@@ -500,24 +500,6 @@ body {
     margin: 1rem 0;
 }
 
-.price-btn {
-    display: inline-block;
-    background-color: #800101;
-    border: none;
-    color: #fff;
-    padding: 0.75rem 2.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    text-decoration: none;
-    width: 100%;
-    transition: 0.3 ease;
-}
-
-.price-btn:hover {
-    background-color: #800101;
-}
-
 #small-desc {
     font-size: 1rem;
     color: #999;
