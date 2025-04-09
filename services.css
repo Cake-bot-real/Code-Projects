@@ -9,14 +9,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #a30101 !important;
+  background: #a30101;
   padding: 1rem 2rem;
 }
 
 .nav-logo {
   display: flex;
   align-items: center;
-  color: white;
+  color: #a30101;
 }
 
 .nav-logo img {
@@ -32,14 +32,14 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: #a30101;
   font-weight: 500;
 }
 
 .contact-btn {
   padding: 0.5rem 1rem;
-  background-color: #a30101 ;
-  color: white;
+  background-color: #a30101;
+  color: #a30101;
   text-decoration: none;
   border-radius: 4px;
 }
@@ -48,7 +48,7 @@ body {
   padding: 2rem;
   text-align: center;
   background-color: #a30101 ;
-  color: white;
+  color: #a30101;
 }
 
 .services-grid {
@@ -86,7 +86,7 @@ body {
   display: inline-block;
   margin-top: 1rem;
   background-color: #a30101 ;
-  color: #f4f4f4;
+  color: #a30101;
   padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 8px;
