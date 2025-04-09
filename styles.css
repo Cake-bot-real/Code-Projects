@@ -81,7 +81,7 @@ body {
     text-align: center;     /* Centers the button inside the container */
 }
 
-.button {
+.price-btn {
     background: #a30101;
     padding: 10px 20px;
     border: none;
@@ -90,7 +90,7 @@ body {
     color: #fff;
 }
 
-.button:hover {
+.price-btn:hover {
     background: #ffffffcc;
 }
 
