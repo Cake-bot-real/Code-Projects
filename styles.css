@@ -423,103 +423,13 @@ body {
 
 .services h2 {
     margin-bottom: 2rem;
-}
-
-.pricing-toggle {
+}.locations-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     margin-bottom: 2rem;
     gap: 1rem;
-}
-
-/* Pricing Toggle Button */
-.pricing-toggle {
-    display: flex;
-    align-items: center;
-}
-
-/* Regular and First Service Text */
-.toggle-option {
-    font-size: 16px;
-    color: #fff;
-    margin: 0 5px; /* Reduced margin for closer proximity to the toggle */
-    text-align: flex;
-}
-
-/* Container for the toggle switch */
-.toggle-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 60px;
-}
-
-/* Styling the switch itself */
-.switch {
-    position: center;
-    display: inline-block;
-    width: 60px;
-    height: 30px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
-    border-radius: 50px; /* Rounded corners for the switch */
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 22px;
-    width: 22px;
-    border-radius: 50%;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: 0.4s;
-}
-
-/* When checked, switch colors */
-input:checked + .slider {
-    background-color: #4CAF50;
-}
-
-input:checked + .slider:before {
-    transform: translateX(30px); /* Move the knob to the right */
-}
-
-/* Save 20% Text (appears below the switch when active) */
-.save-percentage-container {
-    display: none;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.save-percentage {
-    font-size: 16px;
-    color: green;
-    font-weight: bold;
-}
-
-/* Show the Save 20% text when the checkbox is checked */
-#pricing-toggle-checkbox:checked + .toggle-container + .save-percentage-container {
-    display: block;
 }
 
 /* Responsive Adjustments for smaller screens */

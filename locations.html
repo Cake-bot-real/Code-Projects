@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Cheaper Alternative - Know-a-Guy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    <!-- Font Awesome Link --> 
+    <script src="https://kit.fontawesome.com/e2d15f52fe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="naviagation" aria-label="Main Navigation">
+            <div class="navbar__container">
+                <a href="#home" id="navbar-logo">
+                    <img src="images/Know A Guy Final Banner!.png" alt="Know A Guy Logo">
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#home" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#services-section" class="navbar__links">Services</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#pricing-section" class="navbar__links">Pricing</a>
+                    </li>
+                    
+                </ul>
+                
+                <div class="navbar__btn desktop">
+                    <a href="mailto:knowaguyemail@icloud.com?subject=Contact%20Inquiry&body=Hello,%20I%20have%20a%20general%20inquiry%20and%20would%20like%20to%20get%20in%20touch%20with%20you." class="button">Contact Us</a>
+                </div>
+
+                <button 
+                class="navbar__toggle" 
+                id="mobile-menu" 
+                aria-label="Toggle Navigation" 
+                aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1>"For Every Job, We Know a Guy."</h1>
+                    <p>Know-a-Guy services offer a more affordable option compared to leading companies, saving you money while getting the job done right. We maintain a personal connection to all our clients and communicate directly and effectively. Let our highly motivated and hardworking team help you today! </p>
+                    <a href="mailto:knowaguyemail@icloud.com?subject=Contact%20Inquiry&body=Hello,%20I%20have%20a%20general%20inquiry%20and%20would%20like%20to%20get%20in%20touch%20with%20you." class="button">Contact Us</a>
+                </div>
+                <div class="hero__image">
+                    <img 
+                    id='hero__image'
+                    src="images/undraw_nature_yf30.svg" alt="Illustration of Company" />
+                </div>
+            </div>
+        </section>
+<!-- Rotating Logos Section! -->
+        <div class="rotating-logos">
+            <div class="rotating-logos__track">
+                <span class="logo-text">SNOW SHOVELING</span>
+                <span class="logo-text">YARD WORK</span>
+                <span class="logo-text">BABYSITTING</span>
+                <span class="logo-text">DOG CARE</span>
+                <span class="logo-text">LIFTING</span>
+                <span class="logo-text">AND MORE</span>
+               
+               
+        </div>
+        </div>
+        </div>
+        
+         <section class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <p class="intro-text">
+                Let our team of highly motivated individuals help with all of lifes tasks, for an affordable price!
+            </p>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fa-solid fa-lock icon"></i>
+                    <h3>Secure & Reliable</h3>
+                    <p>We prioritize your security, all our transactions occur in person and after the service!</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-house icon"></i>
+                    <h3>Local & Affordable</h3>
+                    <p>All services are from local people or companies, and at a much more affordable price!</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-envelope icon"></i>
+                    <h3>Prompt & Thoughtful</h3>
+                    <p>We respond to all invoices and questions quickly and with care!</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-user icon"></i>
+                    <h3>User-Friendly Interface</h3>
+                    <p>Our modern, intuitive interface makes engaging with us simple and stress-free, regardless of your technical expertise!</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+        <!-- Our Mission Section -->
+    <section 
+    id="mission-section">
+    <div class="container">
+        <h2>Our Mission</h2>
+        <p>At Know-a-Guy, our mission is to simplify your life by connecting you with trusted, local professionals who deliver exceptional service. We are committed to fostering strong community relationships and ensuring customer satisfaction through every service we provide.</p>
+        <a href="#" class="mission-btn">Learn More</a>
+    </div> 
+    </section>
+
+    
+    <section id="pricing-section">
+        <section id="services-section">
+    <!-- Pricing Section -->
+<section class="services">
+    <h2>Choose the service that's right for you</h2>
+    <!-- Pricing Toggle Button -->
+<div class="pricing-toggle">
+    <span class="toggle-option">Regular Service</span>
+    <!-- Toggle Switch -->
+    <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="pricing-toggle-checkbox" onclick="switchPricing()" />
+            <span class="slider"></span>
+        </label>
+    </div>
+    <span class="toggle-option">First Time Discount</span>
+    
+    <!-- Save 20% Text (will appear below the toggle when active) -->
+    <div class="save-percentage-container">
+        <span class="save-percentage">Save 20%</span>
+    </div>
+</div>
+
+        <div class="services__container">
+            <!-- Basic Charge -->
+            <div class="services__card">
+                <div class="card-content">
+                    <h3>Yard Work</h3>
+                    <div class="card-price">
+                        <p class="price basic-service-price">$40/acre</p>
+                        <p class="price first-service-price hidden">$30/acre</p>
+                        <a href="registration.html?service=Yard%20Work" class="price-btn">Get in Contact</a>
+                        <p id="small-desc">We offer lawn mowing, weeding, and gardening services.</p>
+                    </div>
+                    <div class="card-features">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services__card">
+                <div class="card-content">
+                    <h3>Snow Shoveling</h3>
+                    <div class="card-price">
+                        <p class="price basic-service-price">$20/hr</p>
+                        <p class="price first-service-price hidden">$15/hr</p>
+                        <a href="registration.html?service=Snow%20Shoveling" class="price-btn">Get in Contact</a>
+                        <p id="small-desc">Let us clear your driveways and pathways this winter.</p>
+                    </div>
+                    <div class="card-features">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services__card">
+                <div class="card-content">
+                    <h3>Babysitting</h3>
+                    <div class="card-price">
+                        <p class="price basic-service-price">$25/hr</p>
+                        <p class="price first-service-price hidden">$20/hr</p>
+                        <a href="registration.html?service=Babysitting" class="price-btn">Get in Contact</a>
+                        <p id="small-desc">Reliable babysitting services for your children</p>
+                    </div>
+                    <div class="card-features">
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services__card">
+                <div class="card-content">
+                    <h3>Dog Care</h3>
+                    <div class="card-price">
+                        <p class="price basic-service-price">$25/hr</p>
+                        <p class="price first-service-price hidden">$20/hr</p>
+                        <a href="registration.html?service=Dog%20Care" class="price-btn">Get in Contact</a>
+                        <p id="small-desc">Let us watch your dog while you're away!</p>
+                    </div>
+                    <div class="card-features">
+                    
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services__card">
+                <div class="card-content">
+                    <h3>Lifting Assistance</h3>
+                    <div class="card-price">
+                        <p class="price basic-service-price">$50/hr</p>
+                        <p class="price first-service-price hidden">$45/hr</p>
+                        <a href="registration.html?service=Lifting%20Assistance" class="price-btn">Get in Contact</a>
+                        <p id="small-desc">Our team of dedicated and hardworking individuals is ready to assist you with moving and organizing your belongings, even though we are not officially certified.
+                        </p>
+                    </div>
+                    <div class="card-features">
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services__card">
+                <div class="card-content">
+                    <h3>Art Commissions</h3>
+                    <div class="card-price">
+                        <p class="price basic-service-price">$15-25</p>
+                        <p class="price first-service-price hidden">$12-20</p>
+                        <a href="registration.html?service=Art%20Commissions" class="price-btn">Get in Contact</a>
+                        <p id="small-desc">We draw what your heart desires.</p>
+                    </div>
+                    <div class="card-features">
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services__card">
+                <div class="card-content">
+                    <h3>Basic Graphic Design</h3>
+                    <div class="card-price">
+                        <p class="price basic-service-price">$15</p>
+                        <p class="price first-service-price hidden">$12</p>
+                        <a href="registration.html?service=Basic%20Graphic%20Design" class="price-btn">Get in Contact</a>
+                        <p id="small-desc">Let us design for you!</p>
+                    </div>
+                    <div class="card-features">
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services__card">
+                <div class="card-content">
+                    <h3>Technology Support</h3>
+                    <div class="card-price">
+                        <p class="price basic-service-price">$20-30</p>
+                        <p class="price first-service-price hidden">$15-20</p>
+                        <a href="registration.html?service=Event%20Assistance" class="price-btn">Get in Contact</a>
+                        <p id="small-desc">Need help setting up some tech? Can't get the PC to work? We're happy to help!</p>
+                    </div>
+                    <div class="card-features">
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services__card">
+                <div class="card-content">
+                    <h3>Errand Running</h3>
+                    <div class="card-price">
+                        <p class="price basic-service-price">$30 + Cost of Groceries</p>
+                        <p class="price first-service-price hidden">$28 + Cost of Groceries</p>
+                        <a href="registration.html?service=Errand%20Running" class="price-btn">Get in Contact</a>
+                        <p id="small-desc">We Dash, You Dine!</p>
+                    </div>
+                    <div class="card-features">
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services__card">
+                <div class="card-content">
+                    <h3>Website Design</h3>
+                    <div class="card-price">
+                        <p class="price basic-service-price">$1000</p>
+                        <p class="price first-service-price hidden">$800</p>
+                        <a href="registration.html?service=Website%20Design" class="price-btn">Get in Contact</a>
+                        <p id="small-desc">Get your own company going with a personalized website!</p>
+                    </div>
+                    <div class="card-features">
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+     </div>
+</section>
+<section id="review-section" class="review-section">
+    <div class="review-container">
+      <h2 class="review-title">Leave a Review</h2>
+      <p class="review-subtitle">We would love to hear your feedback and experience with Know-a-Guy!</p>
+      <form action="https://formspree.io/f/meoapnzw" method="POST" class="review-form">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="_replyto" placeholder="Your email (optional)" />
+        <textarea name="message" placeholder="Write your review..." required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+      <div id="submitted-reviews" class="submitted-reviews">
+        <!-- Future review display area -->
+      </div>
+    </div>
+  </section>  
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer__container">
+            <div class="footer__links">
+                <section class="social__media-wrap">
+                    <div class="footer__link-items">
+                        <h2>Contact Us</h2>
+                        <a href="mailto:knowaguyemail@icloud.com?subject=Contact%20Inquiry&body=Hello,%20I%20have%20a%20general%20inquiry%20and%20would%20like%20to%20get%20in%20touch%20with%20you." >Email</a>
+                        <a href="tel:+13026189551">Phone</a>
+                    </div>
+                    <div class="footer__link-items">
+                        <h2>Social Media</h2>
+                        <a href="https://www.instagram.com/know.a.guy.2025/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="https://www.facebook.com/know.a.guy.2025/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    </div>
+                    <div class="footer__link-items">
+                        <h2>Policies</h2>
+                        <a href="/privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                    </div>
+                </section>
+            <section class="social__media">
+                <div class="social__media-wrap">
+                    <p class="website_rights">
+                        © Know-a-Guy <span id="year"></span> 
+                    </p>
+                    <div class="social__icons">
+                        <a href="https://www.facebook.com/know.a.guy.2025/" class="social__icon-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/know.a.guy.2025/" class="social__icon-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
