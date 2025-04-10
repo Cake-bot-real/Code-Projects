@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #222;
+  background: #a30101;
   padding: 1rem 2rem;
 }
 
@@ -38,7 +38,7 @@ body {
 
 .contact-btn {
   padding: 0.5rem 1rem;
-  background-color: #00b894;
+  background-color: #a30101;
   color: white;
   text-decoration: none;
   border-radius: 4px;
