@@ -26,50 +26,6 @@ body {
   .price-btn:hover {
     background-color: #d62828; /* darker red on hover */
   }
-  
-
-/* Hamburger Menu */
-.navbar__toggle {
-    display: none;
-    color: #fff;
-    font-size: 1.8rem;
-    cursor: pointer;
-    border: none;
-    background: none;
-}
-#navbar__menu {
-    display: none;
-}
-
-@media screen and (max-width: 968px) {
-    .navbar__toggle {
-        display: block;
-    }
-
-    .navbar__menu {
-        flex-direction: column;
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        width: 100%;
-        height: calc(100% - 80px);
-        background: #a30101;
-        overflow-y: auto;
-    }
-
-    #navbar__menu {
-        display: none;
-    }
-
-    .navbar__menu.active {
-        left: 0;
-    }
-
-    .navbar__item {
-        width: 100%;
-        text-align: center;
-    }
-}
 
 /* Hero Section */
 .hero {
