@@ -598,34 +598,6 @@ body {
         font-size: 1rem;
     }
 }
-
-/* Style the button in the header */
-.navbar__btn a {
-    display: inline-block;
-    padding: 10px 20px; /* Proper spacing for a rectangle */
-    border-radius: 5px; /* Slight rounding */
-    text-align: center;
-    background-color: #fff; /* Button background color */
-    color: #a30101;
-    text-decoration: none;
-    margin-left: 15px; /* Space away from hamburger icon */
-}
-
-.navbar__toggle {
-    margin-right: 20px; /* Space between the button and hamburger */
-}
-
-/* Adjust button and spacing on mobile */
-@media screen and (max-width: 768px) {
-    .navbar__btn a {
-        padding: 8px 15px; /* Smaller padding for mobile */
-        font-size: 0.9rem; /* Adjust font size */
-    }
-    .navbar__toggle {
-        margin-right: 10px; /* Reduce space on smaller screens */
-    }
-}
-
 html {
     scroll-behavior: smooth;
 }
