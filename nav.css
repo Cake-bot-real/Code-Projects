@@ -126,3 +126,20 @@
         margin-right: 10px; /* Reduce space on smaller screens */
     }
 }
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #a30101;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .button:hover {
+    background-color: #850101;
+  }
+  
