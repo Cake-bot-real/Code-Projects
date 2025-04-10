@@ -5,37 +5,6 @@ body {
   color: #333;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #a30101;
-  padding: 1rem 2rem;
-}
-
-.nav-logo {
-  display: flex;
-  align-items: center;
-  color: white;
-}
-
-.nav-logo img {
-  height: 40px;
-  margin-right: 10px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-}
-
 .contact-btn {
   padding: 0.5rem 1rem;
   background-color: #a30101;
