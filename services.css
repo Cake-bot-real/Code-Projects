@@ -36,12 +36,3 @@ body {
   margin-top: 0;
 }
 
-.book-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  background-color: #a30101 ;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  border-radius: 8px;
-}
