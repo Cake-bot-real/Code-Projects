@@ -90,9 +90,6 @@
         overflow-y: auto;
     }
 
-    #navbar__menu {
-        display: none;
-    }
 
     .navbar__menu.active {
         left: 0;
@@ -116,7 +113,7 @@
 }
 
 .navbar__toggle {
-    margin-right: 20px; /* Space between the button and hamburger */
+    margin-right: 15px; /* Space between the button and hamburger */
 }
 
 /* Adjust button and spacing on mobile */
