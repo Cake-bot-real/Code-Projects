@@ -5,13 +5,6 @@ body {
   color: #333;
 }
 
-.services-header {
-  padding: 2rem;
-  text-align: center;
-  background-color: #ffffff ;
-  color: #a30101;
-}
-
 .services-grid {
   display: flex;
   flex-direction: column;

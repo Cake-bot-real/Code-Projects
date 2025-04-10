@@ -5,13 +5,6 @@ body {
   color: #333;
 }
 
-.locations-header {
-  padding: 2rem;
-  text-align: center;
-  background-color: #a30101;
-  color: white;
-}
-
 .locations-grid {
   display: flex;
   flex-direction: column;
