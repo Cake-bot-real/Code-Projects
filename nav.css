@@ -109,7 +109,7 @@
     background-color: #fff; /* Button background color */
     color: #a30101;
     text-decoration: none;
-    margin-left: 15px; /* Space away from hamburger icon */
+    margin-left: 0px; /* Space away from hamburger icon */
 }
 
 .navbar__toggle {
