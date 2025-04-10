@@ -15,23 +15,38 @@
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-logo">
-      <a href="/"><img src="/images/Know A Guy Final Banner!.png" alt="Know-a-Guy Logo" /></a>
-    </div>
-    <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/services.html">Services</a></li>
-      <li><a href="/locations.html">Locations</a></li>
-    </ul>
-    <a href="mailto:knowaguyemail@icloud.com" class="contact-btn">Contact Us</a>
-  </nav>
+  <header>
+    <nav class="navbar" role="naviagation" aria-label="Main Navigation">
+        <div class="navbar__container">
+            <a href="#home" id="navbar-logo">
+                <img src="images/Know A Guy Final Banner!.png" alt="Know A Guy Logo">
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="services.html" class="navbar__links">Services</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="locations.html" class="navbar__links">Locations</a>
+                </li>
+                
+            </ul>
+            
+            <div class="navbar__btn desktop">
+                <a href="mailto:knowaguyemail@icloud.com?subject=Contact%20Inquiry&body=Hello,%20I%20have%20a%20general%20inquiry%20and%20would%20like%20to%20get%20in%20touch%20with%20you." class="button">Contact Us</a>
+            </div>
 
-  <!-- Main Header Section -->
-  <header class="locations-header">
-    <h1>Our Service Areas</h1>
-    <p>Enter the areas where Know-a-Guy currently operates. We’re always expanding!</p>
-  </header>
+            <button 
+            class="navbar__toggle" 
+            id="mobile-menu" 
+            aria-label="Toggle Navigation" 
+            aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+</header>
 
   <!-- Locations Form Section -->
   <section class="locations-grid">
