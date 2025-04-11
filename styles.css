@@ -357,7 +357,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.service__card p {
+.services__card p {
     margin-bottom: 1rem;
     color: rgb(35, 39, 35);
 }
@@ -366,7 +366,7 @@ body {
     list-style: none;   
 }
 
-.service__card ul {
+.services__card ul {
     list-style: none;
     padding: 0;
     text-align: left;
