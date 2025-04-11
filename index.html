@@ -198,6 +198,34 @@
               <div id="submitted-reviews" class="submitted-reviews"></div>
             </div>
           </section>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const reviewForm = document.querySelector(".review-form");
+              reviewForm.addEventListener("submit", async function (e) {
+                e.preventDefault();
+                const formData = new FormData(reviewForm);
+            
+                try {
+                  const response = await fetch(reviewForm.action, {
+                    method: "POST",
+                    body: formData,
+                    headers: {
+                      'Accept': 'application/json'
+                    }
+                  });
+            
+                  if (response.ok) {
+                    window.location.href = "https://yourdomain.com/"; // 🔁 Change this to your home or thank-you page
+                  } else {
+                    alert("There was a problem submitting your review.");
+                  }
+                } catch (error) {
+                  alert("Something went wrong. Please try again later.");
+                }
+              });
+            });
+            </script>
+            
           <footer>
             <div class="footer__container">
               <div class="footer__links">
