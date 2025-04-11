@@ -205,39 +205,9 @@ body, html {
       font-size: 0.9rem;
     }
   }
-  /* Mobile Styles */
   @media screen and (max-width: 768px) {
-    .navbar__menu {
-      position: fixed;
-      top: 0;
-      left: -50%;
-      height: 100vh;
-      width: 50%;
-      background-color: #a30101;
-      flex-direction: column;
-      padding-top: 5rem;
-      padding-left: 1rem;
-      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-      transition: left 0.3s ease-in-out;
-      z-index: 1000;
-    }
-      .navbar__btn.desktop {
-        display: none !important;
-      }
-      .navbar__toggle {
-        display: block;
-      }
-    
-      .navbar__menu {
-        display: none;
-      }
-    
-      .navbar__btn.desktop {
-        display: none;
-      }
-  
-    .navbar__menu.active {
-      left: 0;
+    #hero_image {
+      display: none;
     }
   
     .navbar__toggle {
@@ -245,20 +215,45 @@ body, html {
       background: none;
       border: none;
       font-size: 28px;
-      color: #333;
+      color: #fff;
       cursor: pointer;
       z-index: 1100;
     }
   
-    .navbar__btn.desktop {
+    .navbar__menu {
       display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      width: 100%;
+      height: calc(100% - 80px);
+      background-color: #a30101;
+      padding-top: 2rem;
+      transition: left 0.3s ease-in-out;
+      z-index: 1000;
     }
   
-    #hero_image {
-      display: none;
+    .navbar__menu.active {
+      display: flex;
+      left: 0;
     }
   
     .navbar__item {
       margin-bottom: 1rem;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar__links {
+      padding: 1rem;
+      font-size: 1rem;
+      color: #fff;
+    }
+  
+    .navbar__btn,
+    .navbar__btn.desktop {
+      display: none !important;
     }
   }
+  
