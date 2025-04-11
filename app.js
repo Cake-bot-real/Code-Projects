@@ -96,3 +96,14 @@ function switchPricing() {
     firstDiscounts.forEach(discount => discount.style.display = "none");
   }
 }
+
+const mobileMenu = document.getElementById('mobile-menu');
+const navMenu = document.querySelector('.navbar__menu');
+
+mobileMenu.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+
+  // Update accessibility
+  const expanded = mobileMenu.getAttribute("aria-expanded") === "true" || false;
+  mobileMenu.setAttribute("aria-expanded", !expanded);
+});

@@ -52,11 +52,21 @@ body, html {
 /* Hamburger icon visible only on mobile */
 .navbar__toggle {
   display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
   background: none;
   border: none;
-  font-size: 1.5rem;
-  color: #000;
+  cursor: pointer;
+  z-index: 1001;
 } 
+.navbar__toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
   /* Logo */
   #navbar-logo {
     text-decoration: none;
@@ -211,7 +221,7 @@ body, html {
     }
   
     .navbar__toggle {
-      display: block;
+      display: flex;
       background: none;
       border: none;
       font-size: 28px;
@@ -221,29 +231,24 @@ body, html {
     }
   
     .navbar__menu {
-      display: none;
-      flex-direction: column;
-      position: fixed;
-      top: 80px;
-      left: -100%;
-      width: 100%;
-      height: calc(100% - 80px);
-      background-color: #a30101;
-      padding-top: 2rem;
-      transition: left 0.3s ease-in-out;
-      z-index: 1000;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
     }
   
     .navbar__menu.active {
       display: flex;
-      left: 0;
     }
   
     .navbar__item {
-      margin-bottom: 1rem;
-      width: 100%;
-      text-align: center;
-    }
+        margin: 0.5rem 0;
+     }
   
     .navbar__links {
       padding: 1rem;
