@@ -85,9 +85,10 @@ body, html {
   .navbar__menu {
     display: flex;
     justify-content: center;
+    flex: 1;
     list-style: none;
     transition: left 0.3s ease;
-    color: #a30101;
+    color: #ffffff;
   }
   
   .navbar__item {
