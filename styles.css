@@ -423,7 +423,7 @@ body {
 /* Pricing Plan Mobile CSS */
 @media (max-width: 968px) {
     /* Stack services container vertically on smaller screens */
-    .services-container {
+    .services__container {
         display: flex; /* Ensure it's a flex container */
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items horizontally */
