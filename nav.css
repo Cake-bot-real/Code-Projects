@@ -58,6 +58,7 @@
   list-style: none;
   text-align: center;
   margin: 0;
+  color: #a30101;
   /* This centers the menu in the available space */
   justify-content: center;
   flex: 1;
@@ -69,7 +70,7 @@
 }
 
 .navbar__links {
-  color: #a30101;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
