@@ -38,7 +38,7 @@
                     <label><input type="checkbox" name="Services[]" value="Lifting Assistance"> Lifting Assistance</label>
                     <label><input type="checkbox" name="Services[]" value="Art Commissions"> Art Commissions</label>
                     <label><input type="checkbox" name="Services[]" value="Basic Graphic Design"> Basic Graphic Design</label>
-                    <label><input type="checkbox" name="Services[]" value="Technology Support">Event Assistance</label>
+                    <label><input type="checkbox" name="Services[]" value="Technology Support">Technology Support</label>
                     <label><input type="checkbox" name="Services[]" value="Errand Running"> Errand Running</label>
                     <label><input type="checkbox" name="Services[]" value="Website Design"> Website Design</label>
                 </div>
@@ -58,3 +58,31 @@
     </div>
     <script src="registration.js" defer></script></body>
 </html>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector("form");
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+          if (response.ok) {
+            window.location.href = "https://yourdomain.com/";
+          } else {
+            alert("There was a problem submitting the form.");
+          }
+        } catch (error) {
+          alert("There was an error submitting the form.");
+        }
+      });
+    });
+    </script>
+    
