@@ -31,6 +31,48 @@ body, html {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Hide mobile nav by default */
+.navbar__menu--mobile {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  position: absolute;
+  top: 60px; /* height of nav bar */
+  right: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar__menu--mobile.active {
+  display: flex;
+}
+
+/* Hamburger icon visible only on mobile */
+.navbar__toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__toggle {
+    display: block;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__btn.desktop {
+    display: none;
+  }
+}
+
+
   
   /* Logo */
   #navbar-logo {

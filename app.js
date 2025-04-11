@@ -78,3 +78,10 @@ document.getElementById('review-form').addEventListener('submit', function(event
         // Reset form
         document.getElementById('review-form').reset();
     }})
+
+    const mobileMenu = document.getElementById("mobile-menu");
+const mobileNav = document.getElementById("mobile-nav");
+
+mobileMenu.addEventListener("click", () => {
+  mobileNav.classList.toggle("active");
+});
