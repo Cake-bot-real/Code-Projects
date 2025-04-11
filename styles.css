@@ -123,11 +123,6 @@ body {
 }
 
 /* Rotating Logos Continuous Scrolling */
-.rotating-logos__track {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-}
 
 @keyframes scroll-infinite {
     0% {
