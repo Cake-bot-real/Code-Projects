@@ -1,7 +1,18 @@
 /* General Reset for Navbar */
+
+* {
+    box-sizing: border-box;
+  }
+
 body {
     padding-top: 80px;
-  }
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
   
   /* Navbar Container */
   .navbar__container {
@@ -10,14 +21,16 @@ body {
     align-items: center;
     height: 80px;
     background: #a30101;
+    z-index: 1000;
     width: 100%;
-    margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 1rem; /* Better for responsiveness */
     position: fixed;
     top: 0;
-    z-index: 1000;
+    left: 0;
+    right: 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  }
+}
+
   
   /* Logo */
   #navbar-logo {
@@ -75,7 +88,7 @@ body {
     background-color: #fff;
     color: #a30101;
     text-decoration: none;
-    margin-left: 0;
+    margin-left: 1rem;
     font-size: 1rem;
   }
   
