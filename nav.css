@@ -57,6 +57,22 @@ body {
     padding: 0 1rem;
     color: #fff;
 }
+@media screen and (max-width: 768px) {
+    .navbar__links {
+      padding: 0 0.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .navbar__btn a {
+      padding: 6px 10px;
+      font-size: 0.8rem;
+      margin-left: 0;
+    }
+  
+    .navbar__container {
+      padding: 0 10px; /* tighter padding on small screens */
+    }
+  }
 
 .navbar__links:hover {
     color: #ffffff73;
@@ -159,5 +175,22 @@ body {
   
   .button:hover {
     background-color: #850101;
+  }
+  
+/* Hide mobile button on desktop */
+.mobile-only {
+    display: none;
+  }
+  
+  /* Show mobile button inside the menu */
+  @media screen and (max-width: 968px) {
+    .mobile-only {
+      display: block;
+      padding: 1rem;
+    }
+  
+    .navbar__btn {
+      display: none; /* hide the desktop version */
+    }
   }
   
