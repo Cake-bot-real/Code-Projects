@@ -157,7 +157,7 @@ body {
 
 .rotating-logos__track {
     display: inline-block;
-    animation: rotate 15s linear infinite;
+    animation: scroll infinite;
     white-space: nowrap;
 }
 
