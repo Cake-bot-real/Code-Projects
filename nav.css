@@ -56,24 +56,7 @@ body, html {
   border: none;
   font-size: 1.5rem;
   color: #000;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar__toggle {
-    display: block;
-  }
-
-  .navbar__menu {
-    display: none;
-  }
-
-  .navbar__btn.desktop {
-    display: none;
-  }
-}
-
-
-  
+} 
   /* Logo */
   #navbar-logo {
     text-decoration: none;
@@ -215,13 +198,6 @@ body, html {
       padding: 1rem;
     }
   
-    .navbar__menu.active + .navbar__btn {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      margin-top: 20px;
-    }
-  
     .navbar__btn a {
       width: 90%;
       max-width: 300px;
@@ -245,6 +221,20 @@ body, html {
       transition: left 0.3s ease-in-out;
       z-index: 1000;
     }
+      .navbar__btn.desktop {
+        display: none !important;
+      }
+      .navbar__toggle {
+        display: block;
+      }
+    
+      .navbar__menu {
+        display: none;
+      }
+    
+      .navbar__btn.desktop {
+        display: none;
+      }
   
     .navbar__menu.active {
       left: 0;
