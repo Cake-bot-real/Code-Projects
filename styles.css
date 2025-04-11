@@ -36,14 +36,11 @@ body {
 }
 
 .hero__content h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    line-height: 1.2;
     color: #a30101;
 }
 
-.hero__content h1 {
-    font-size: 4rem; /* 64px at base 16px */
-    line-height: 1.2;
-}
 
 .hero__content p {
     font-size: 1.2rem; /* 19.2px */
