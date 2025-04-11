@@ -1,10 +1,31 @@
-// Mobile menu toggle
-const menu = document.querySelector("#mobile-menu");
-const menuLinks = document.querySelector(".navbar__menu");
+document.addEventListener('DOMContentLoaded', function() {
+  // Mobile menu toggle
+  const mobileMenu = document.querySelector("#mobile-menu");
+  const menuLinks = document.querySelector(".navbar__menu");
+  
+  if (mobileMenu && menuLinks) {
+    mobileMenu.addEventListener("click", function() {
+      mobileMenu.classList.toggle("is-active");
+      mobileMenu.classList.toggle("active"); // Add this line
+      menuLinks.classList.toggle("active");
+      
+      // Update accessibility
+      const expanded = mobileMenu.getAttribute("aria-expanded") === "true" || false;
+      mobileMenu.setAttribute("aria-expanded", !expanded);
+    });
+    
+    // Auto-close mobile menu when a nav link is clicked
+    const navLinks = document.querySelectorAll(".navbar__links");
+    navLinks.forEach(link => {
+      link.addEventListener("click", function() {
+        mobileMenu.classList.remove("is-active");
+        mobileMenu.classList.remove("active");
+        menuLinks.classList.remove("active");
+      });
+    });
+  }
 
-menu.addEventListener("click", function () {
-  menu.classList.toggle("is-active");
-  menuLinks.classList.toggle("active");
+  // The rest of your DOMContentLoaded code...
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -96,14 +117,7 @@ function switchPricing() {
     firstDiscounts.forEach(discount => discount.style.display = "none");
   }
 }
-
-const mobileMenu = document.getElementById('mobile-menu');
-const navMenu = document.querySelector('.navbar__menu');
-
-mobileMenu.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
-
   // Update accessibility
   const expanded = mobileMenu.getAttribute("aria-expanded") === "true" || false;
   mobileMenu.setAttribute("aria-expanded", !expanded);
-});
+
