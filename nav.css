@@ -1,166 +1,97 @@
-/* Navbar */
-.navbar__container {
+/* General Reset for Navbar */
+body {
+    padding-top: 80px;
+  }
+  
+  /* Navbar Container */
+  .navbar__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background: #a30101; /* Main red color */
-    z-index: 1000;
+    background: #a30101;
     width: 100%;
     margin: 0 auto;
     padding: 0 50px;
     position: fixed;
     top: 0;
+    z-index: 1000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-body {
-    padding-top: 80px; /* Matches the navbar height */
-}
-
-#navbar-logo img {
-    height: 50px; /* Adjust the height as needed */
-    width: auto;  /* Maintain aspect ratio */
-}
-
-@media screen and (max-width: 768px) {
-    #navbar-logo img {
-        height: 40px;  /* Adjust for smaller screens */
-    }
-}
-
-#navbar-logo {
+  }
+  
+  /* Logo */
+  #navbar-logo {
     text-decoration: none;
     cursor: pointer;
     font-size: 2.5rem;
     font-weight: bold;
     color: #fff;
-}
-
-.navbar__menu {
+  }
+  
+  #navbar-logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Menu */
+  .navbar__menu {
     display: flex;
     justify-content: center;
     list-style: none;
     transition: left 0.3s ease;
-}
-
-.navbar__item {
-    height: 80px;
-}
-
-.navbar__links {
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    text-decoration: none;
-    align-items: center;
-    padding: 0 1rem;
-    color: #fff;
-}
-@media screen and (max-width: 768px) {
-    .navbar__links {
-      padding: 0 0.5rem;
-      font-size: 0.9rem;
-    }
-  
-    .navbar__btn a {
-      padding: 6px 10px;
-      font-size: 0.8rem;
-      margin-left: 0;
-    }
-  
-    .navbar__container {
-      padding: 0 10px; /* tighter padding on small screens */
-    }
   }
-
-.navbar__links:hover {
-    color: #ffffff73;
-}
-
-.navbar__btn {
+  
+  .navbar__item {
+    height: 80px;
+    width: auto;
+    text-align: center;
+  }
+  
+  .navbar__links {
     display: flex;
     align-items: center;
-}
-/* Hamburger Menu */
-.navbar__toggle {
+    justify-content: center;
+    height: 100%;
+    padding: 0 1rem;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar__links:hover {
+    color: #ffffff73;
+  }
+  
+  /* Contact Button (Desktop) */
+  .navbar__btn {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar__btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    color: #a30101;
+    text-decoration: none;
+    margin-left: 0;
+    font-size: 1rem;
+  }
+  
+  /* Toggle (Hamburger) */
+  .navbar__toggle {
     display: none;
     color: #fff;
     font-size: 1.8rem;
     cursor: pointer;
     border: none;
     background: none;
-}
-#navbar__menu {
-    display: none;
-}
-
-@media screen and (max-width: 968px) {
-    .navbar__btn {
-        width: 100%;
-        text-align: center;
-        padding: 1rem 0;
-      }
-    
-      .navbar__btn a {
-        width: 90%;
-        margin: 0 auto;
-        display: block;
-      }
-    
-    .navbar__toggle {
-        display: block;
-    }
-
-    .navbar__menu {
-        flex-direction: column;
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        width: 100%;
-        height: calc(100% - 80px);
-        background: #a30101;
-        overflow-y: auto;
-    }
-
-
-    .navbar__menu.active {
-        left: 0;
-    }
-
-    .navbar__item {
-        width: 100%;
-        text-align: center;
-     }
-    }
-
-/* Style the button in the header */
-.navbar__btn a {
-    display: inline-block;
-    padding: 10px 20px; /* Proper spacing for a rectangle */
-    border-radius: 5px; /* Slight rounding */
-    text-align: center;
-    background-color: #fff; /* Button background color */
-    color: #a30101;
-    text-decoration: none;
-    margin-left: 0px; /* Space away from hamburger icon */
-}
-
-.navbar__toggle {
-    margin-right: 15px; /* Space between the button and hamburger */
-}
-
-/* Adjust button and spacing on mobile */
-@media screen and (max-width: 768px) {
-    .navbar__btn a {
-        padding: 8px 15px; /* Smaller padding for mobile */
-        font-size: 0.9rem; /* Adjust font size */
-    }
-    .navbar__toggle {
-        margin-right: 10px; /* Reduce space on smaller screens */
-    }
-}
-.button {
+    margin-right: 15px;
+  }
+  
+  /* Button Reusable Class */
+  .button {
     display: inline-block;
     padding: 0.5rem 1rem;
     background-color: #a30101;
@@ -177,20 +108,68 @@ body {
     background-color: #850101;
   }
   
-/* Hide mobile button on desktop */
-.mobile-only {
-    display: none;
-  }
-  
-  /* Show mobile button inside the menu */
+  /* Mobile Styles */
   @media screen and (max-width: 968px) {
+    #navbar-logo img {
+      height: 40px;
+    }
+  
+    .navbar__container {
+      padding: 0 20px;
+    }
+  
+    .navbar__toggle {
+      display: block;
+    }
+  
+    .navbar__menu {
+      flex-direction: column;
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      width: 100%;
+      height: calc(100% - 80px);
+      background: #a30101;
+      overflow-y: auto;
+    }
+  
+    .navbar__menu.active {
+      left: 0;
+    }
+  
+    .navbar__item {
+      width: 100%;
+    }
+  
+    .navbar__links {
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  
+    .navbar__btn {
+      display: none;
+    }
+  
+    .navbar__btn.desktop {
+      display: none;
+    }
+  
     .mobile-only {
       display: block;
       padding: 1rem;
     }
   
-    .navbar__btn {
-      display: none; /* hide the desktop version */
+    .navbar__menu.active + .navbar__btn {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .navbar__btn a {
+      width: 90%;
+      max-width: 300px;
+      padding: 8px 15px;
+      font-size: 0.9rem;
     }
   }
-  
