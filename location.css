@@ -76,3 +76,12 @@ body {
 .footer p {
   font-size: 0.9rem;
 }
+
+/* Optional: Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #a30101;
+  border-radius: 4px;
+}
