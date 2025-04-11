@@ -1,66 +1,65 @@
+// Mobile menu toggle
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar__menu");
 
 menu.addEventListener("click", function () {
-    menu.classList.toggle("is-active");
-    menuLinks.classList.toggle("active");
+  menu.classList.toggle("is-active");
+  menuLinks.classList.toggle("active");
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("mobile-menu"); // The hamburger menu button
-    const navMenu = document.getElementById("navbar__container"); // The mobile menu container
-    const navLinks = document.querySelectorAll(".navbar__links"); // All nav links
-
-    // Close menu when a nav link is clicked
-    navLinks.forEach(link => {
-        link.addEventListener("click", function () {
-            navMenu.classList.remove("active"); // Hide the menu
-            menuToggle.checked = false; // Uncheck the checkbox if using a checkbox toggle
-        });
+  // Auto-close mobile menu when a nav link is clicked
+  const navLinks = document.querySelectorAll(".navbar__links");
+  navLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      menu.classList.remove("is-active");
+      menuLinks.classList.remove("active");
     });
-});
+  });
 
-// Function to toggle the different deals
-function switchPricing() {
-    const checkbox = document.getElementById("pricing-toggle-checkbox");
-    const regularPrices = document.querySelectorAll(".basic-service-price");
-    const firstPrices = document.querySelectorAll(".first-service-price");
-    const firstDiscounts = document.querySelectorAll(".save-percentage");
+  // Set current year in footer
+  const yearElement = document.getElementById("year");
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
 
-    if (checkbox.checked) {
-        // Show first-time prices, hide regular prices
-        regularPrices.forEach((price) => price.classList.add("hidden")); // Corrected `classlist` to `classList`
-        firstPrices.forEach((price) => price.classList.remove("hidden"));
+  // AJAX review form submit (if present)
+  const reviewForm = document.querySelector(".review-form");
+  if (reviewForm) {
+    reviewForm.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const formData = new FormData(reviewForm);
 
-        // Show all discount elements
-        firstDiscounts.forEach((discount) => {
-            discount.style.display = "inline";
+      try {
+        const response = await fetch(reviewForm.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
         });
-    } else {
-        // Show regular prices, hide first-time prices
-        regularPrices.forEach((price) => price.classList.remove("hidden"));
-        firstPrices.forEach((price) => price.classList.add("hidden"));
 
-        // Hide all discount elements
-        firstDiscounts.forEach((discount) => {
-            discount.style.display = "none";
-        });
-    }
-}
+        if (response.ok) {
+          window.location.href = "https://know-a-guy.org/"; // ✅ Adjust as needed
+        } else {
+          alert("There was a problem submitting your review.");
+        }
+      } catch (error) {
+        alert("Something went wrong. Please try again later.");
+      }
+    });
+  }
 
-window.addEventListener("load", () => {
-    const yearElement = document.getElementById("year");
-    const currentYear = new Date().getFullYear();
-    yearElement.textContent = currentYear;
-})
+  // Manual review card append (optional fallback)
+  const manualReviewForm = document.getElementById('review-form');
+  if (manualReviewForm) {
+    manualReviewForm.addEventListener('submit', function(event) {
+      event.preventDefault();
 
-document.getElementById('review-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+      const reviewerName = document.getElementById('reviewer-name').value;
+      const reviewText = document.getElementById('review-text').value;
 
-    const reviewerName = document.getElementById('reviewer-name').value;
-    const reviewText = document.getElementById('review-text').value;
-
-    if (reviewerName && reviewText) {
+      if (reviewerName && reviewText) {
         const reviewCard = document.createElement('div');
         reviewCard.classList.add('review-card');
 
@@ -74,14 +73,26 @@ document.getElementById('review-form').addEventListener('submit', function(event
         reviewCard.appendChild(reviewTextElement);
 
         document.getElementById('submitted-reviews').appendChild(reviewCard);
-
-        // Reset form
-        document.getElementById('review-form').reset();
-    }})
-
-    const mobileMenu = document.getElementById("mobile-menu");
-const mobileNav = document.getElementById("mobile-nav");
-
-mobileMenu.addEventListener("click", () => {
-  mobileNav.classList.toggle("active");
+        manualReviewForm.reset();
+      }
+    });
+  }
 });
+
+// Toggle pricing plans
+function switchPricing() {
+  const checkbox = document.getElementById("pricing-toggle-checkbox");
+  const regularPrices = document.querySelectorAll(".basic-service-price");
+  const firstPrices = document.querySelectorAll(".first-service-price");
+  const firstDiscounts = document.querySelectorAll(".save-percentage");
+
+  if (checkbox.checked) {
+    regularPrices.forEach(price => price.classList.add("hidden"));
+    firstPrices.forEach(price => price.classList.remove("hidden"));
+    firstDiscounts.forEach(discount => discount.style.display = "inline");
+  } else {
+    regularPrices.forEach(price => price.classList.remove("hidden"));
+    firstPrices.forEach(price => price.classList.add("hidden"));
+    firstDiscounts.forEach(discount => discount.style.display = "none");
+  }
+}
