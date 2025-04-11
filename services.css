@@ -59,3 +59,10 @@ body {
 .button:hover {
   background-color: #cc0000;
 }
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #cc0000; /* Or any color you want */
+  margin-top: 0.5rem;
+}
