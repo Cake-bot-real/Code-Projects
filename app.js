@@ -77,13 +77,4 @@ document.getElementById('review-form').addEventListener('submit', function(event
 
         // Reset form
         document.getElementById('review-form').reset();
-    }
-});
-const mobileMenu = document.getElementById('mobile-menu');
-const navMenu = document.querySelector('.navbar__menu');
-
-mobileMenu.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
-  const isExpanded = mobileMenu.getAttribute('aria-expanded') === 'true';
-  mobileMenu.setAttribute('aria-expanded', !isExpanded);
-});
+    }})
