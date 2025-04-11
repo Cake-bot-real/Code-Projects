@@ -47,12 +47,23 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .hero__content h1 {
-        font-size: 3rem; /* Shrink for tablets */
+    .hero__container {
+        flex-direction: column-reverse;
+        text-align: center;
     }
 
-    .hero__content p {
-        font-size: 1rem; /* Shrink for tablets */
+    .hero__content {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .hero__image {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .hero__image img {
+        max-width: 100%;
     }
 }
 
@@ -157,7 +168,7 @@ body {
 
 .rotating-logos__track {
     display: inline-block;
-    animation: scroll infinite;
+    animation: scroll linear ;
     white-space: nowrap;
 }
 
