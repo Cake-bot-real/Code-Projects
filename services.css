@@ -136,7 +136,7 @@ body {
 
 @media screen and (max-width: 576px) {
   .services-grid {
-    padding: 1.5rem;
+    padding: 2rem;
     gap: 1rem;
   }
   
@@ -173,7 +173,8 @@ body {
 
 @media screen and (max-width: 420px) {
   .services-grid {
-    padding: 1rem;
+    padding: 2rem;
+    gap: 1rem;
   }
   
   .service-card {
