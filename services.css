@@ -9,8 +9,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem 8rem 8rem; /* Changed to add less padding on top */
-  margin-top: 4rem; /* Added margin-top to create space */
+  padding: 2rem 8rem 8rem;
+  margin-top: 6rem; /* Increased margin-top to accommodate the navbar */
 }
 
 .service-card {
@@ -73,7 +73,7 @@ body {
 @media screen and (max-width: 1200px) {
   .services-grid {
     padding: 2rem 4rem 4rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
   
   .service-card {
@@ -85,7 +85,7 @@ body {
   .services-grid {
     padding: 2rem 3rem 3rem;
     gap: 1.5rem;
-    margin-top: 2.5rem;
+    margin-top: 4.5rem;
   }
   
   .service-info {
@@ -106,7 +106,7 @@ body {
   .services-grid {
     padding: 1.5rem 2rem 2rem;
     gap: 1.25rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
   
   .service-card {
@@ -142,7 +142,7 @@ body {
   .services-grid {
     padding: 1.5rem 2rem 2rem;
     gap: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 3.5rem;
   }
   
   .service-card {
@@ -180,7 +180,7 @@ body {
   .services-grid {
     padding: 1rem 1rem 2rem;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
   
   .service-card {
@@ -228,6 +228,7 @@ body {
   justify-content: center;
   gap: 1.5rem;
   margin-bottom: 1rem;
+  padding: 0; /* Added to remove default padding */
 }
 
 .footer-links a {
