@@ -9,7 +9,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 8rem;
+  padding: 2rem 8rem 8rem; /* Changed to add less padding on top */
+  margin-top: 4rem; /* Added margin-top to create space */
 }
 
 .service-card {
@@ -71,7 +72,8 @@ body {
 /* Responsive styles for smaller devices */
 @media screen and (max-width: 1200px) {
   .services-grid {
-    padding: 4rem;
+    padding: 2rem 4rem 4rem;
+    margin-top: 3rem;
   }
   
   .service-card {
@@ -81,8 +83,9 @@ body {
 
 @media screen and (max-width: 992px) {
   .services-grid {
-    padding: 3rem;
+    padding: 2rem 3rem 3rem;
     gap: 1.5rem;
+    margin-top: 2.5rem;
   }
   
   .service-info {
@@ -101,8 +104,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .services-grid {
-    padding: 2rem;
+    padding: 1.5rem 2rem 2rem;
     gap: 1.25rem;
+    margin-top: 2rem;
   }
   
   .service-card {
@@ -136,8 +140,9 @@ body {
 
 @media screen and (max-width: 576px) {
   .services-grid {
-    padding: 2rem;
+    padding: 1.5rem 2rem 2rem;
     gap: 1rem;
+    margin-top: 1.5rem;
   }
   
   .service-card {
@@ -173,8 +178,9 @@ body {
 
 @media screen and (max-width: 420px) {
   .services-grid {
-    padding: 2rem;
+    padding: 1rem 1rem 2rem;
     gap: 1rem;
+    margin-top: 1rem;
   }
   
   .service-card {
