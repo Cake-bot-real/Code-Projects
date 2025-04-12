@@ -70,7 +70,7 @@
 }
 
 .navbar__links {
-  color: #ffffff;
+  color: #a30101;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,6 +81,21 @@
 
 .navbar__links:hover {
   color: #d62828;
+}
+
+.navbar__links.desktop-link {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.navbar__links.desktop-link:hover {
+  color: #f8f8f8;
+  opacity: 0.8;
 }
 
 /* Right section with button */
@@ -121,7 +136,7 @@
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background: #333;
+  background: #fff;
   display: block;
 }
 
@@ -139,6 +154,21 @@
   #navbar-logo img {
     max-height: 40px;
     width: auto;
+  }
+
+  .navbar__links.desktop-link {
+    color: #a30101; /* Red text in mobile menu */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    height: 40px;
+  }
+  
+  .navbar__links.desktop-link:hover {
+    color: #d62828; /* Darker red on hover */
+    background-color: #f8f8f8; /* Light gray background on hover */
   }
   
   .navbar__menu {
