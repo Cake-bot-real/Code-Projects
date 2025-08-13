@@ -196,10 +196,15 @@
             <div class="review-container">
               <h2 class="review-title">Leave a Review</h2>
               <p class="review-subtitle">We would love to hear your feedback and experience with Know-a-Guy!</p>
-              <form action="https://formspree.io/f/meoapnzw" method="post" class="review-form">
-                <input type="text" name="name" placeholder="Your name" required=""> <input type="email" name="_replyto" placeholder="Your email (optional)"> 
-                <textarea name="message" placeholder="Write your review..." required=""></textarea> <button type="submit">Submit Review</button>
-              </form>
+             <form action="https://formspree.io/f/meoapnzw" method="POST">
+  <input type="hidden" name="_redirect" value="https://know-a-guy.org/thank-you.html">
+  
+  <!-- your form fields -->
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <button type="submit">Submit</button>
+</form>
+
               <div id="submitted-reviews" class="submitted-reviews"></div>
             </div>
           </section>
