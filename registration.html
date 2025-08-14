@@ -75,7 +75,7 @@
             }
           });
           if (response.ok) {
-            window.location.href = "https://know-a-guy.org/thank-you.html";
+    window.location.assign("/thank-you.html"); // relative path
           } else {
             alert("There was a problem submitting the form.");
           }
